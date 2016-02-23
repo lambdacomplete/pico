@@ -205,7 +205,7 @@ var pico = (function(){
         for(var header in this.headers){
             this.xhr.setRequestHeader(header, this.headers[header]);
         }
-        this.xhr.resonseType="text";
+        this.xhr.responseType="text";
         this.deferred.fail(this.exception)
         this.deferred.done(this.callback)
         var characters_read = 0;
